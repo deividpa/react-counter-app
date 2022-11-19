@@ -3,7 +3,7 @@ import CounterApp from "./Components/CounterApp";
 function App() {
   return (
     <div className="App">
-      <CounterApp value={9585} />
+      <CounterApp value={15645456456.54654} />
     </div>
   );
 }
