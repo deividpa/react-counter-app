@@ -8,13 +8,23 @@ const CounterApp = ({ value }) => {
     setCounter(counter + 1);
   };
 
+  const resetHandler = () => {
+    setCounter(0);
+  };
+
+  const substractHandler = () => {
+    setCounter(counter - 1);
+  };
+
   return (
     <>
       <h1>Counter App</h1>
       <h2>{value}</h2>
       <h3>Counter: {counter}</h3>
       <br />
-      <button onClick={clickHandler}>Aumentar Contador</button>
+      <button onClick={clickHandler}>+1</button>
+      <button onClick={resetHandler}>Resetear Contador</button>
+      <button onClick={substractHandler}>-1</button>
     </>
   );
 };
